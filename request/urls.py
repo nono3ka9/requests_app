@@ -5,6 +5,6 @@ app_name = 'request'
 
 urlpatterns = [
   path('', views.index, name='index'),
-  path('detail/', views.detall, name='detail')
+  path('detail/', views.detail, name='detail')
 ]
 

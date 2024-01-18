@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>詳細</title>
+</head>
+<body>
+    <h1>Weather Information</h1>
+    <h2>{{ prefecture }}&emsp;{{ date }}の天気</h2><br>
+    <img src="{{ url }}" alt="" width="200px">
+    <h3>{{ weather }}</h3>
+    <p>最高気温：{{ max }}</p>
+    <p>最低気温：{{ min }}</p>
+    <a href="{% url 'request:index' %}">トップページに戻る</a>
+</body>
+</html>
